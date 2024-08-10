@@ -12,11 +12,14 @@ body {
 }
 
 nav {
-    width: 180px; /* Reducir el ancho de la barra de navegación */
+    width: 180px;
     background: #333;
     color: white;
-    padding: 10px; /* Reducir el padding */
+    padding: 15px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
 }
 
 nav ul {
@@ -26,27 +29,30 @@ nav ul {
 }
 
 nav ul li {
-    margin: 5px 0; /* Reducir el margen entre los elementos */
+    margin: 5px 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 8px; /* Reducir el padding de los enlaces */
+    padding: 10px;
     border-radius: 4px;
-    font-size: 0.9em; /* Reducir el tamaño de la fuente */
-    transition: background 0.3s ease;
+    font-size: 1em;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     background: #555;
+    transform: scale(1.05);
 }
 
 main {
-    flex: 1;
+    margin-left: 200px; /* Espacio para la barra de navegación fija */
     padding: 20px;
     overflow-y: auto;
+    height: 100%;
 }
 
 #inicio {
@@ -73,7 +79,7 @@ main {
     padding: 15px;
     margin: 10px;
     border-radius: 8px;
-    color: black;
+    color: white;
     text-align: center;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
@@ -110,6 +116,11 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     margin-bottom: 20px;
+    display: none; /* Ocultar secciones por defecto */
+}
+
+section.active {
+    display: block; /* Mostrar solo la sección activa */
 }
 
 form {
