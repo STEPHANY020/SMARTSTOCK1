@@ -79,29 +79,29 @@ main {
     padding: 15px;
     margin: 10px;
     border-radius: 8px;
-    color: white;
+    color: rgb(9, 0, 0);
     text-align: center;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 #color-productos {
-    background-color: #d4edda; /* Verde claro */
+    background-color: #6fbc81; /* Verde claro */
 }
 
 #color-ventas {
-    background-color: #f8d7da; /* Rosa claro */
+    background-color: #c67373; /* Rosa claro */
 }
 
 #color-compras {
-    background-color: #d1ecf1; /* Azul claro */
+    background-color: #5cafbd; /* Azul claro */
 }
 
 #color-informes {
-    background-color: #fff3cd; /* Amarillo claro */
+    background-color: #d7c475; /* Amarillo claro */
 }
 
 #color-factura {
-    background-color: #e2e0eb; /* Morado claro */
+    background-color: #8c7ad3; /* Morado claro */
 }
 
 h2 {
