@@ -12,28 +12,30 @@ body {
 }
 
 nav {
-    width: 220px;
+    width: 180px; /* Reducir el ancho de la barra de navegación */
     background: #333;
     color: white;
-    padding: 15px;
+    padding: 10px; /* Reducir el padding */
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin: 5px 0; /* Reducir el margen entre los elementos */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 10px;
+    padding: 8px; /* Reducir el padding de los enlaces */
     border-radius: 4px;
+    font-size: 0.9em; /* Reducir el tamaño de la fuente */
     transition: background 0.3s ease;
 }
 
@@ -45,6 +47,55 @@ main {
     flex: 1;
     padding: 20px;
     overflow-y: auto;
+}
+
+#inicio {
+    text-align: center;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#inicio h1 {
+    margin-bottom: 20px;
+}
+
+.color-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.color-card {
+    width: 180px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#color-productos {
+    background-color: #d4edda; /* Verde claro */
+}
+
+#color-ventas {
+    background-color: #f8d7da; /* Rosa claro */
+}
+
+#color-compras {
+    background-color: #d1ecf1; /* Azul claro */
+}
+
+#color-informes {
+    background-color: #fff3cd; /* Amarillo claro */
+}
+
+#color-factura {
+    background-color: #e2e0eb; /* Morado claro */
 }
 
 h2 {
@@ -59,26 +110,6 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     margin-bottom: 20px;
-}
-
-#productos {
-    background-color: #d4edda; /* Verde claro */
-}
-
-#ventas {
-    background-color: #f8d7da; /* Rosa claro */
-}
-
-#compras {
-    background-color: #d1ecf1; /* Azul claro */
-}
-
-#informes {
-    background-color: #fff3cd; /* Amarillo claro */
-}
-
-#factura {
-    background-color: #e2e0eb; /* Morado claro */
 }
 
 form {
