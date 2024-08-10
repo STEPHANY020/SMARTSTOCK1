@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control de Inventario</title>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
     <div class="container">
-        <div></div>
         <nav>
             <ul>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#ventas">Ventas</a></li>
-                <li><a href="#compras">Compras</a></li>
-                <li><a href="#informes">Informes</a></li>
-                <li><a href="#factura">Crear Factura</a></li>
+                <li><a href="#inicio" class="nav-link" data-target="inicio">Inicio</a></li>
+                <li><a href="#productos" class="nav-link" data-target="productos">Productos</a></li>
+                <li><a href="#ventas" class="nav-link" data-target="ventas">Ventas</a></li>
+                <li><a href="#compras" class="nav-link" data-target="compras">Compras</a></li>
+                <li><a href="#informes" class="nav-link" data-target="informes">Informes</a></li>
+                <li><a href="#factura" class="nav-link" data-target="factura">Crear Factura</a></li>
             </ul>
         </nav>
 
         <main>
-            <section id="productos">
+            <section id="inicio" class="content">
+                <h1>Bienvenido a SmartStock</h1>
+                <div class="color-cards">
+                    <div class="color-card" id="color-productos">
+                        <h2>Productos</h2>
+                        <p>Gestiona tu inventario de productos.</p>
+                    </div>
+                    <div class="color-card" id="color-ventas">
+                        <h2>Ventas</h2>
+                        <p>Registra y gestiona las ventas realizadas.</p>
+                    </div>
+                    <div class="color-card" id="color-compras">
+                        <h2>Compras</h2>
+                        <p>Controla las compras y suministros.</p>
+                    </div>
+                    <div class="color-card" id="color-informes">
+                        <h2>Informes</h2>
+                        <p>Genera informes detallados.</p>
+                    </div>
+                    <div class="color-card" id="color-factura">
+                        <h2>Crear Factura</h2>
+                        <p>Crea y gestiona facturas fácilmente.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="productos" class="content">
                 <h2>Productos</h2>
                 <form id="formProducto">
                     <label for="nombreProducto">Nombre:</label>
@@ -38,13 +63,14 @@
                             <th>Nombre</th>
                             <th>Precio</th>
                             <th>Cantidad</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
                 </table>
             </section>
 
-            <section id="ventas">
+            <section id="ventas" class="content">
                 <h2>Ventas</h2>
                 <form id="formVenta">
                     <label for="nombreVenta">Nombre del Producto:</label>
@@ -70,7 +96,7 @@
                 </table>
             </section>
 
-            <section id="compras">
+            <section id="compras" class="content">
                 <h2>Compras</h2>
                 <form id="formCompra">
                     <label for="nombreCompra">Nombre del Producto:</label>
@@ -79,7 +105,6 @@
                     <input type="number" id="cantidadCompra" required>
                     <label for="precioCompra">Precio:</label>
                     <input type="number" id="precioCompra" step="0.01" required>
-                    <input type="date" id="fechaVenta" required>
                     <button type="submit">Registrar Compra</button>
                 </form>
                 <table id="tablaCompras">
@@ -95,12 +120,12 @@
                 </table>
             </section>
 
-            <section id="informes">
+            <section id="informes" class="content">
                 <h2>Informes</h2>
                 <!-- Implementar sección de informes aquí -->
             </section>
 
-            <section id="factura">
+            <section id="factura" class="content">
                 <h2>Crear Factura</h2>
                 <form id="formFactura">
                     <label for="nombreCliente">Nombre:</label>
